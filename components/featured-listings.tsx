@@ -85,7 +85,7 @@ export default function FeaturedListings() {
         </div>
         <div className="flex justify-center mt-8">
           <Link href="/listings">
-            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-blue-500 hover:text-white cursor-pointer border-blue-500 text-blue-500">
+            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-sky-400 hover:text-white cursor-pointer border-sky-400 text-sky-400">
               View All Listings
             </Badge>
           </Link>
