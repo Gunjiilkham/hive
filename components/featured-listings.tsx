@@ -6,11 +6,11 @@ import { Badge } from "@/components/ui/badge"
 const featuredListings = [
   {
     id: 1,
-    title: "Calculus: Early Transcendentals",
+    title: "Calculus: Early Transcendentals (8th Edition)",
     category: "Textbooks",
     price: 15,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/textbooks/calculus-stewart-8th.jpg",
     owner: "Alex K.",
     location: "North Campus",
   },
@@ -20,7 +20,7 @@ const featuredListings = [
     category: "Appliances",
     price: 25,
     period: "month",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/appliances/mini.jpg",
     owner: "Jamie L.",
     location: "East Dorms",
   },
@@ -30,7 +30,7 @@ const featuredListings = [
     category: "Electronics",
     price: 8,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/electronics/calculator.jpg",
     owner: "Taylor S.",
     location: "West Campus",
   },
@@ -40,7 +40,7 @@ const featuredListings = [
     category: "Textbooks",
     price: 12,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/textbooks/psyc101.jpg",
     owner: "Morgan P.",
     location: "South Dorms",
   },
@@ -85,7 +85,7 @@ export default function FeaturedListings() {
         </div>
         <div className="flex justify-center mt-8">
           <Link href="/listings">
-            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-sky-400 hover:text-white cursor-pointer border-sky-400 text-sky-400">
+            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-[#42A5F5] hover:text-white cursor-pointer border-[#42A5F5] text-[#42A5F5]">
               View All Listings
             </Badge>
           </Link>
