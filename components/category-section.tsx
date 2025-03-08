@@ -59,7 +59,7 @@ export default function CategorySection() {
               href={category.href}
               className="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:bg-gray-200"
             >
-              <category.icon className="h-8 w-8 mb-2 text-sky-400" />
+              <category.icon className="h-8 w-8 mb-2 text-[#42A5F5]" />
               <span className="text-sm font-medium">{category.name}</span>
             </Link>
           ))}
