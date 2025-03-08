@@ -31,7 +31,7 @@ export default function ListingCard({ listing }: ListingCardProps) {
             fill
             className="object-cover transition-transform hover:scale-105"
           />
-          <Badge className="absolute top-2 right-2 bg-amber-500">{listing.category}</Badge>
+          <Badge className="absolute top-2 right-2 bg-yellow-400 text-black">{listing.category}</Badge>
         </div>
         <CardHeader className="p-4">
           <CardTitle className="line-clamp-1">{listing.title}</CardTitle>
@@ -39,7 +39,7 @@ export default function ListingCard({ listing }: ListingCardProps) {
         <CardContent className="p-4 pt-0 flex-grow">
           <p className="text-sm text-gray-500">{listing.location}</p>
           <div className="flex items-center mt-2">
-            <Star className="h-4 w-4 fill-amber-500 text-amber-500 mr-1" />
+            <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
             <span className="text-sm font-medium">{listing.rating}</span>
           </div>
         </CardContent>
