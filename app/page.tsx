@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
@@ -12,6 +13,15 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background">
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
+            <div className="relative w-10 h-10">
+              <Image 
+                src="/images/hive-logo.png" 
+                alt="Hive Logo" 
+                fill 
+                className="object-contain"
+                priority
+              />
+            </div>
             <span className="text-xl font-bold text-amber-500">Hive</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -86,7 +96,17 @@ export default function Home() {
       </main>
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-6 md:h-16">
-          <p className="text-sm text-gray-500">© 2025 Hive. All rights reserved.</p>
+          <div className="flex items-center gap-2">
+            <div className="relative w-8 h-8">
+              <Image 
+                src="/images/hive-logo.png" 
+                alt="Hive Logo" 
+                fill 
+                className="object-contain"
+              />
+            </div>
+            <p className="text-sm text-gray-500">© 2025 Hive. All rights reserved.</p>
+          </div>
           <nav className="flex items-center gap-4 text-sm">
             <Link href="/terms" className="text-gray-500 hover:underline underline-offset-4">
               Terms
