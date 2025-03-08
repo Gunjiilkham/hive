@@ -48,16 +48,16 @@ const featuredListings = [
 
 export default function FeaturedListings() {
   return (
-    <section className="w-full py-12 md:py-24">
+    <section className="w-full py-12 md:py-24 bg-gray-100">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Featured Listings</h2>
-          <p className="max-w-[700px] text-gray-500 md:text-xl">Check out what other students are renting right now.</p>
+          <p className="max-w-[700px] text-gray-600 md:text-xl">Check out what other students are renting right now.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {featuredListings.map((listing) => (
             <Link href={`/listings/${listing.id}`} key={listing.id} className="group">
-              <Card className="overflow-hidden transition-all hover:shadow-md">
+              <Card className="overflow-hidden transition-all hover:shadow-md bg-white">
                 <div className="aspect-video relative overflow-hidden">
                   <Image
                     src={listing.image || "/placeholder.svg"}
@@ -65,16 +65,16 @@ export default function FeaturedListings() {
                     fill
                     className="object-cover transition-transform group-hover:scale-105"
                   />
-                  <Badge className="absolute top-2 right-2 bg-amber-500">{listing.category}</Badge>
+                  <Badge className="absolute top-2 right-2 bg-yellow-400 text-black">{listing.category}</Badge>
                 </div>
                 <CardHeader className="p-4">
                   <CardTitle className="line-clamp-1">{listing.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-4 pt-0">
-                  <p className="text-sm text-gray-500">{listing.location}</p>
+                  <p className="text-sm text-gray-600">{listing.location}</p>
                 </CardContent>
                 <CardFooter className="p-4 flex items-center justify-between border-t">
-                  <p className="text-sm text-gray-500">By {listing.owner}</p>
+                  <p className="text-sm text-gray-600">By {listing.owner}</p>
                   <p className="font-medium">
                     ${listing.price}/{listing.period}
                   </p>
@@ -85,7 +85,7 @@ export default function FeaturedListings() {
         </div>
         <div className="flex justify-center mt-8">
           <Link href="/listings">
-            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-amber-50 cursor-pointer">
+            <Badge variant="outline" className="text-base py-2 px-4 hover:bg-blue-500 hover:text-white cursor-pointer border-blue-500 text-blue-500">
               View All Listings
             </Badge>
           </Link>
