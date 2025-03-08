@@ -10,11 +10,11 @@ import { Search, SlidersHorizontal } from "lucide-react"
 const listings = [
   {
     id: 1,
-    title: "Calculus: Early Transcendentals",
+    title: "Calculus: Early Transcendentals (8th Edition)",
     category: "Textbooks",
     price: 15,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/textbooks/calculus-stewart-8th.jpg",
     owner: "Alex K.",
     location: "North Campus",
     rating: 4.8,
@@ -25,7 +25,7 @@ const listings = [
     category: "Appliances",
     price: 25,
     period: "month",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/appliances/mini.jpg",
     owner: "Jamie L.",
     location: "East Dorms",
     rating: 4.5,
@@ -36,7 +36,7 @@ const listings = [
     category: "Electronics",
     price: 8,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/electronics/calculator.jpg",
     owner: "Taylor S.",
     location: "West Campus",
     rating: 4.9,
@@ -47,7 +47,7 @@ const listings = [
     category: "Textbooks",
     price: 12,
     period: "week",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/textbooks/psyc101.jpg",
     owner: "Morgan P.",
     location: "South Dorms",
     rating: 4.7,
@@ -108,7 +108,7 @@ export default function ListingsPage() {
             <div className="w-full md:w-64 space-y-6">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold">Filters</h2>
-                <Button variant="ghost" size="sm" className="text-amber-500">
+                <Button variant="ghost" size="sm" className="text-[#42A5F5] hover:text-blue-600">
                   Reset
                 </Button>
               </div>
@@ -233,7 +233,7 @@ export default function ListingsPage() {
                 <Button variant="outline" className="mr-2">
                   Previous
                 </Button>
-                <Button variant="outline" className="bg-amber-500 text-white hover:bg-amber-600">
+                <Button variant="outline" className="bg-yellow-400 text-black hover:bg-yellow-500">
                   1
                 </Button>
                 <Button variant="outline" className="mx-1">
