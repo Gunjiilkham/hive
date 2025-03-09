@@ -22,7 +22,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <span className="text-2xl font-bold text-yellow-400">Hive</span>
+            <span className="text-2xl font-bold tracking-tight text-yellow-400 uppercase">Hive</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/listings" className="font-medium transition-colors hover:text-yellow-400">
@@ -37,12 +37,12 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-2">
             <Link href="/login">
-              <Button variant="ghost" size="sm" className="text-white hover:text-yellow-400">
+              <Button variant="ghost" size="sm" className="text-white hover:text-yellow-400 font-medium">
                 Log In
               </Button>
             </Link>
             <Link href="/signup">
-              <Button size="sm" className="bg-yellow-400 hover:bg-yellow-500 text-black">
+              <Button size="sm" className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold tracking-wide">
                 Sign Up
               </Button>
             </Link>
@@ -53,10 +53,10 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-[#42A5F5] text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Rent What You Need, Share What You Don't
+              <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+                Rent What You Need,<br className="hidden sm:inline" /> Share What You Don't
               </h1>
-              <p className="max-w-[700px] text-gray-100 md:text-xl">
+              <p className="max-w-[700px] text-gray-100 md:text-xl font-medium">
                 Connect with fellow students to rent textbooks, dorm essentials, and more at a fraction of the cost.
               </p>
               <div className="w-full max-w-md flex items-center space-x-2">
@@ -79,14 +79,14 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-black text-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
                 Ready to Join the Hive?
               </h2>
-              <p className="max-w-[700px] text-gray-300 md:text-xl">
+              <p className="max-w-[700px] text-gray-300 md:text-xl font-medium">
                 Sign up today and start saving money while helping your fellow students.
               </p>
               <Link href="/signup">
-                <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500">
+                <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 font-semibold tracking-wide px-8 py-6 text-lg mt-4">
                   Get Started
                 </Button>
               </Link>
