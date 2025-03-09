@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Poppins } from 'next/font/google'
+import { Comfortaa } from 'next/font/google'
 
-const poppins = Poppins({
+const comfortaa = Comfortaa({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+  variable: '--font-comfortaa',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans`}>{children}</body>
+      <body className={`${comfortaa.variable} font-sans`}>{children}</body>
     </html>
   )
 }
