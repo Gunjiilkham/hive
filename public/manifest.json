@@ -1,0 +1,22 @@
+{
+  "name": "Hive - Student Marketplace",
+  "short_name": "Hive",
+  "description": "Rent what you need, share what you don't",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#42A5F5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/hive-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/hive-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 
