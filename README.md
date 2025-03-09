@@ -11,7 +11,7 @@ Hive is a peer-to-peer marketplace platform designed specifically for students. 
 
 ## Live Demo
 
-Visit our live demo at [hivemarketplace.vercel.app](https://hivemarketplace.vercel.app/)
+Visit my live demo at [hivemarketplace.vercel.app](https://hivemarketplace.vercel.app/)
 
 ## Features
 
